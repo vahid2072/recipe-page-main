@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+
+:root{
+  --Nutmeg: hsl(14, 45%, 36%);       //854632
+  --Dark-Raspberry: hsl(332, 51%, 32%); //7B284F
+  --White: hsl(0, 0%, 100%);         //FFFFFF
+  --Rose-White: hsl(330, 100%, 98%); //FFF5FA
+  --Eggshell: hsl(30, 54%, 90%);     //F3E6D8
+  --Light-Grey: hsl(30, 18%, 87%);   //E4DED8
+  --Wenge-Brown: hsl(30, 10%, 34%);  //5F574E
+  --Dark-Charcoal: hsl(24, 5%, 18%); //302D2C
+}
+
+body{
+  font-family: "Young Serif", sans-serif;
+  background-color: var(--Eggshell);
+  font-size: 16px;
+  main{
+    background-color: var(--White);
+  }
+}
+
+//Responsive design
+@media only screen and (min-width: 768px) {
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    main{
+      width: 50%;
+      padding: 50px;
+      .image-omelette{
+        border-radius: 18px;
+        width: 840px !important;
+        height: 400px !important;
+      }
+      header{
+        .header-info{
+          .header-title{
+            font-size: 48px;
+          }
+        }
+      }
+      .nutrition{
+        table{
+          td{
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

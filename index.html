@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="./jquery.js"></script>
+  <title>Frontend Mentor | Recipe page</title>
+</head>
+<body>
+  <script>
+$(document).ready(function() {
+
+  $('*').css({
+    'margin' : '0',
+    'padding' : '0',
+    'box-sizing' : 'border-box'
+  });
+
+    $("body").append("<main><div class='image-omelette'></div><header><div class='header-info'><h1 class='header-title'>Simple Omelette Recipe<h1></div><p class='header-para'>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p><div class='prep-time'><h3 class='prep-title'>Preparation time</h3><ul><li><span class='bold-text'>Total:</span><span class='light-text'> Approximately 10 minutes</span</li><li><span class='bold-text'>Preparation:</span><span class='light-text'> 5 minutes</span</li><li><span class='bold-text'>Cooking:</span><span class='light-text'> 5 minutes</span></li></ul></div></header><section class='ingredients'><h2 class='ingredients-title'>Ingredients</h2><ul><li><span class='light-text'>2-3 large eggs</span></li><li><span class='light-text'>Salt, to taste</span></li><li><span class='light-text'>Pepper, to taste</span></li><li><span class='light-text'>1 tablespoon of butter or oil</span></li><li><span class='light-text'>Optional fillings: cheese, diced vegetables, cooked meats, herbs</span></li></ul></section><hr><section class='instructions'><h2 class='instructions-title'>Instructions</h2><ol><li><span class='bold-text'>Beat the eggs: </span><span class='light-text'>In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</span></li><li><span class='bold-text'>Heat the pan: </span><span class='light-text'>Place a non-stick frying pan over medium heat and add butter or oil.</span></li><li><span class='bold-text'>Cook the omelette: </span><span class='light-text'>Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</span></li><li><span class='bold-text'>Add fillings (optional): </span><span class='light-text'>When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</span></li><li><span class='bold-text'>Fold and serve: </span><span class='light-text'>As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</span></li><li><span class='bold-text'>Enjoy: </span><span class='light-text'>Serve hot, with additional salt and pepper if needed.</span></li></ol></section><hr><section class='nutrition'><h2 class='nutrition-title'>Nutrition</h2><p>The table below shows nutritional values per serving without the additional fillings.</p><table style='width:100%''><tr><td><span class='light-text'>Calories</span></td><td><span class='brown-text'>277kcal</span></td></tr><tr><td><span class='light-text'>Carbs</span></td><td><span class='brown-text'>0g</span></td></tr><tr><td><span class='light-text'>Protein</span></td><td><span class='brown-text'>20g</span></td></tr><tr><td><span class='light-text'>Fat</span></td><td><span class='brown-text'>22g</span></td></tr></table></section></main>  <div class='attribution'>Challenge by <a href='https://www.frontendmentor.io?ref=challenge' target='_blank'>Frontend Mentor</a>. Coded by <a href='https://www.linkedin.com/in/vahid-khani-12937426a/''>Vahid Khani</a>.</div>");
+
+  $("header, section").css({
+    "margin": "0 1.5em"
+  });
+
+  $(".image-omelette").css({
+    "background-image": "url('./assets/images/image-omelette.jpeg')",
+    "background-size": "contain",
+    "background-repeat": "no-repeat",
+    "width": "375px",
+    "height": "200px"
+  });
+
+  $(".header-title").css({
+    "margin-bottom": ".7em",
+    "color": "#302D2C"
+  });
+
+  $(".header-para").css({
+    "color": "#5F574E"
+  });
+
+  $(".prep-time").css({
+    "background-color": "#F9ECF2",
+    "margin": "0 .2em",
+    "padding": ".1em",
+    "border-radius": "8px"
+  });
+
+  $(".prep-title").css({
+    "color": "#7B284F",
+    "margin": ".5em 1em"
+  });
+
+  $("ul").css({
+    "color": "#7B284F",
+    "list-style-type": "square"
+  });
+
+  $(".light-text").css({
+    "color": "#5F574E"
+  });
+
+  $(".bold-text").css({
+    "color": "#302D2C",
+    "opacity": "0.7",
+    "font-weight": "bold"
+  });
+
+  $("li").css({
+    "padding": ".5em"
+  });
+
+  $("li:first").css({
+    "width": "70%",
+    "align-items": "center"
+  });
+
+  $(".ingredients-title").css({
+    "color": "#854632",
+    "font-size": "28px"
+  });
+
+  $(".instructions-title").css({
+    "color": "#854632",
+    "font-size": "28px"
+  });
+
+  $("hr").css({
+    "width": "90%"
+  });
+
+  $(".nutrition-title").css({
+    "color": "#854632",
+    "font-size": "28px"
+  });
+
+  $("p").css({
+    "color": "#5F574E",
+    "font-size": "14px"
+  });
+
+  $(".brown-text").css({
+    "color": "#854632"
+  });
+
+  $('table').css({
+	'border-collapse' : 'collapse',
+	'text-align' : 'center'
+});
+
+$('tr').css({
+	'border-bottom' : '1px solid #E4DED8',
+  "padding-bottom": "1.5em"
+});
+
+$('tr:last').css({
+	'border-bottom' : 'none'
+});
+
+$('.attribution').css({
+	'font-size' : '11px',
+	'text-align' : 'center',
+  "margin-top": "2em"
+});
+
+$('.attribution a').css({
+	'color' : 'hsl(228, 45%, 44%)'
+});
+
+});
+  </script>
+</body>
+</html>
